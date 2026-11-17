@@ -1,4 +1,4 @@
-### THAILAND'S TEMPERATURE AND RAINFALL BY PROVINCES (2016–2025)
+### Thailand's Temperature and Rainfall by Provinces (Year: 2016–2025) 
 
 Author: Atiq Kainan Ahmed. Email: atiqka@yahoo.com
 
@@ -35,6 +35,7 @@ Rainfall Moran's I: <value>, p=<value>
 
 A positive I with a small p-value means neighbouring provinces have similar values (spatial clustering).
 
+
 ## Requirements
 
 Python 3.9+
@@ -43,6 +44,7 @@ Packages: earthengine-api, geopandas, pandas, numpy, matplotlib, libpysal, esda
 
 bash
 pip install earthengine-api geopandas pandas numpy matplotlib libpysal esda
+
 
 ## Setup
 
@@ -83,6 +85,7 @@ python thailand_temp_rainfall.py
 
 Rename the command to match your script's file name. The Earth Engine calls use getInfo(), so the script waits for the results and can take a minute or two.
 
+
 ## Configuration
 
 Setting	Where	Default
@@ -96,7 +99,6 @@ ERA5-Land Monthly Aggregated: ECMWF / Copernicus Climate Change Service, via the
 CHIRPS Daily: Climate Hazards Group (UCSB), via the Earth Engine catalog
 Province boundaries: GADM 4.1 (Thailand, level 1)
 
-Please credit the data providers and check each source's terms of use.
 
 ## Notes and limitations
 
@@ -106,11 +108,14 @@ The temperature is a mean of monthly means, and the rainfall is a mean over the 
 Moran's I is shown as optional diagnostics. Results depend on the spatial weights (Queen contiguity here).
 The Earth Engine project ID and the local file paths in the script are specific to one machine. Change them before running.
 
+
 ## License
 
 MIT License
 
 Copyright (c) 2026 Atiq Kainan Ahmed.
+
+**Note: Credit for data used goes to the respective data providers and license terms of use.**
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
